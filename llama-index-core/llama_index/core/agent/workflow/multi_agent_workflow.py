@@ -247,7 +247,7 @@ class AgentWorkflow(Workflow, PromptMixin, metaclass=AgentWorkflowMeta):
                 content=str(e),
                 tool_name=tool.metadata.name,
                 raw_input=tool_input,
-                raw_output=str(e),
+                raw_output=e,
                 is_error=True,
             )
 
